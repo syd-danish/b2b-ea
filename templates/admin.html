@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elfit Arabia - Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-color: #1a2b1f;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #2a3b2f;
+            transition: left 0.3s ease;
+            padding-top: 100px;
+            z-index: 1000;
+        }
+        .sidebar.active {
+            left: 0;
+        }
+        .sidebar-toggle {
+            position: fixed;
+            top: 80px;
+            left: 10px;
+            z-index: 1100;
+            background-color: #4a7c59;
+            border: none;
+            color: #ffffff;
+        }
+        .content {
+            margin-left: 10px;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        .section {
+            background-color: #2a3b2f;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .sidebar a{
+            font-size: 1.5rem;
+            color: #a8d5ba;
+            display: block;
+            padding: 14px 29px;
+            text-decoration: none;
+            transition: background 0.2s, padding-left 0.2s;
+        }
+        .sidebar a:hover {
+            color: #1a2b1f;
+            background-color: #6ba581;
+            padding-left: 41px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="{{ url_for('admin') }}">Elfit Arabia Admin</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% if section == 'manage-clients' %}active{% endif %}" href="{{ url_for('manage_clients') }}">Manage Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if section == 'client-orders' %}active{% endif %}" href="{{ url_for('client_orders') }}">Client Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if section == 'manage-products' %}active{% endif %}" href="{{ url_for('manage_products') }}">Manage Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <a href="/dashboard">Client Mode</a>
+        <a href="/reports">Job Reports</a>
+        <a href="/admin_list">Admin List</a>
+    </div>
+    <button class="btn sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <!-- Main Content -->
+    <div class="content container-fluid">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% if section == "manage-clients" %}
+            <div class="section">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Manage Clients</h2>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addClientModal">
+                        Add New Client
+                    </button>
+                </div>
+
+                <!-- Clients Table -->
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Client Name</th>
+                                <th>Phone</th>
+                                <th>Company</th>
+                                <th>Address</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if clients %}
+                                {% for client in clients %}
+                                <tr>
+
+                                    <td>{{ client[1] }}</td>
+                                    <td>{{ client[2] }}</td>
+                                    <td>{{ client[3] }}</td>
+                                    <td>{{ client[5] }}</td>
+                                    <td>{{ client[4] }}</td>
+                                    <td>
+                                        <a href="{{ url_for('edit_client_route', client_id=client[0]) }}" class="btn btn-warning btn-sm me-2">Edit</a>
+                                        <form method="POST" action="{{ url_for('delete_client_route', client_id=client[0]) }}"
+                                              style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this client?');">
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="7" class="text-center">No clients found</td>
+                                </tr>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        <div class="modal fade" id="addClientModal" tabindex="-1" aria-labelledby="addClientModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addClientModalLabel">
+                                {% if edit_client %}Edit Client{% else %}Add New Client{% endif %}
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form method="POST">
+                            {% if edit_client %}
+                                <input type="hidden" name="client_id" value="{{ edit_client[0] }}">
+                            {% endif %}
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                           value="{% if edit_client %}{{ edit_client[1] }}{% endif %}" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="client_name" class="form-label">Client Name *</label>
+                                    <input type="text" class="form-control" name="client_name" id="client_name"
+                                           value="{% if edit_client %}{{ edit_client[2] }}{% endif %}" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                           value="{% if edit_client %}{{ edit_client[3] }}{% endif %}" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="company" class="form-label">Company *</label>
+                                    <input type="text" class="form-control" name="company" id="company"
+                                           value="{% if edit_client %}{{ edit_client[5] }}{% endif %}" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <textarea class="form-control" name="address" id="address" rows="3">{% if edit_client %}{{ edit_client[4] }}{% endif %}</textarea>
+                                </div>
+                                <small class="text-muted">* Required fields</small>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                {% if edit_client %}
+                                    <button type="submit" class="btn btn-warning">Update Client</button>
+                                {% else %}
+                                    <button type="submit" class="btn btn-success">Add Client</button>
+                                {% endif %}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+{% elif section == "client-orders" %}
+            <div class="section">
+                <h2>Client Orders</h2>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {% elif section == "manage-products" %}
+<div class="section">
+    <h2 style="padding-bottom: 15px">Manage Products</h2>
+    {% for category in all_categories %}
+    <div class="product-category mb-3">
+        <div class="category-header d-flex justify-content-between align-items-center"
+             data-bs-toggle="collapse" data-bs-target="#{{ category|replace(' ', '')|safe }}">
+            <h4 class="mb-0">{{ category }}</h4>
+            <i class="fas fa-chevron-down category-arrow"></i>
+        </div>
+        <div class="collapse category-content" id="{{ category|replace(' ', '')|safe }}">
+            <div class="category-body mt-3">
+                <!-- Add Product Button -->
+                <div class="d-flex gap-2 mb-3">
+                    <button class="btn btn-success btn-sm" onclick="openAddProductModal('{{ category }}')">
+                        Add Product
+                    </button>
+                </div>
+                <!-- Products Display -->
+                {% set category_products = products_by_category[category] %}
+                {% if category_products %}
+                    <div class="row g-3">
+                        {% for product in category_products %}
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100" style="background-color: #3a5e46; border: 1px solid #4a7c59;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-white">{{ product.name }}</h5>
+                                    {% if product.options %}
+                                        {% for opt_name, opt_value in product.options.items() %}
+                                        <div class="mb-2">
+                                            <small class="text-muted">{{ opt_name }}: {{ opt_value }}</small>
+                                        </div>
+                                        {% endfor %}
+                                    {% endif %}
+
+                                    {% if product.rate %}
+                                    <p class="mb-1 text-white"><strong>Link: </strong> {{ product.rate }}</p>
+                                    {% endif %}
+
+                                    <p class="mb-2 text-white"><strong>Stock:</strong>
+                                        {% if product.stock == 'in_stock' %}
+                                            <span class="badge bg-success">In Stock</span>
+                                        {% else %}
+                                            <span class="badge bg-danger">Out of Stock</span>
+                                        {% endif %}
+                                    </p>
+
+                                    {% if product.image %}
+                                    <img src="{{ url_for('static', filename='uploads/products/' + product.image) }}"
+                                         class="img-fluid mb-2" style="max-height:150px; object-fit:contain;">
+                                    {% else %}
+                                    <div class="mb-2 d-flex align-items-center justify-content-center text-muted"
+                                         style="height:150px; background-color:#2a3b2f; border: 1px dashed #4a7c59;">
+                                         No Image
+                                    </div>
+                                    {% endif %}
+
+                                    <div class="mt-auto d-flex gap-2">
+                                        <button class="btn btn-warning btn-sm flex-fill"
+                                                onclick='openEditProductModal({{ product|tojson }}, "{{ category }}")'>Edit</button>
+                                        <form method="POST" action="{{ url_for('delete_product', product_id=product.id) }}"
+                                              onsubmit="return confirm('Are you sure you want to delete this product?');"
+                                              style="display:inline-block;" class="flex-fill">
+                                            <button type="submit" class="btn btn-danger btn-sm w-100">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-muted">No products in this category yet.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+            <!-- Add Product Modal -->
+            <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" action="{{ url_for('add_product') }}" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <!-- Hidden inputs -->
+                    <input type="hidden" name="product_id" id="productId">
+                    <input type="hidden" name="category" id="productCategoryInput">
+
+                    <!-- Product Name -->
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Product Name *</label>
+                        <input type="text" class="form-control" name="product_name" id="productName" required>
+                    </div>
+
+                    <!-- Product Options -->
+                    <div class="mb-3">
+                        <label class="form-label">Product Attributes</label>
+                        <small class="text-muted d-block mb-2">(e.g: sizes, colors, specifications)</small>
+                        <div id="productOptions">
+                            <div class="product-option d-flex align-items-center mb-2">
+                                <input type="text" class="form-control me-2" name="product_options[]" placeholder="Option Name">
+                                <input type="text" class="form-control me-2" name="option_values[]" placeholder="Option Value">
+                                <button type="button" class="remove-option" onclick="removeOption(this)" style="display:none;">Remove</button>
+                            </div>
+                        </div>
+                        <button type="button" class="add-option mt-2" onclick="addOption()">
+                            <i class="fas fa-plus me-1"></i> Add Another Option
+                        </button>
+                    </div>
+
+                    <!-- Product Rate -->
+                    <div class="mb-3">
+                        <label for="productDetails" class="form-label">Product Link (Optional)</label>
+                        <input type="text" class="form-control" name="product_rate" id="productDetails" placeholder="Enter rate or link">
+                    </div>
+
+                    <!-- Stock Status -->
+                    <div class="mb-3">
+                        <label for="stockStatus" class="form-label">Stock Status *</label>
+                        <select class="form-select" name="stock_status" id="stockStatus" required>
+                            <option value="">Select Stock Status</option>
+                            <option value="in_stock">In Stock</option>
+                            <option value="out_of_stock">Out of Stock</option>
+                        </select>
+                    </div>
+
+                    <!-- Product Image -->
+                    <div class="mb-3">
+                        <label for="productImage" class="form-label">Product Image (Optional)</label>
+                        <input type="file" class="form-control" name="product_image" id="productImage" accept="image/*">
+                        <small class="text-muted">Supported formats: JPG, PNG, GIF (Max size: 5MB)</small>
+                    </div>
+                    <small class="text-muted">* Required fields</small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+        {% else %}
+            <div class="section">
+                <h2>Welcome to the Admin Panel</h2>
+            </div>
+
+        {% endif %}
+    </div>
+
+    <!-- Bootstrap JS and Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script> function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+        // Auto-open modal when editing
+        {% if edit_client %}
+            document.addEventListener('DOMContentLoaded', function() {
+                var editModal = new bootstrap.Modal(document.getElementById('addClientModal'));
+                editModal.show();
+            });
+        {% endif %}
+        function openAddProductModal(category) {
+    const form = document.querySelector('#addProductModal form');
+    form.action = "/admin/add-product";   // your add route
+    form.reset(); // clear inputs
+
+    // set category hidden input
+    document.getElementById('productCategoryInput').value = category;
+
+    // update modal text
+    form.querySelector('button[type="submit"]').textContent = "Save Product";
+    document.getElementById('addProductModalLabel').textContent = "Add New Product (" + category + ")";
+
+    new bootstrap.Modal(document.getElementById('addProductModal')).show();
+}
+
+
+function openEditProductModal(product, category) {
+    document.getElementById('addProductModalLabel').textContent = 'Edit Product: ' + product.name;
+
+    // populate values
+    document.getElementById('productCategoryInput').value = category;
+    document.getElementById('productId').value = product.id;
+    document.getElementById('productName').value = product.name;
+    document.getElementById('productDetails').value = product.rate || '';
+    document.getElementById('stockStatus').value = product.stock || '';
+
+    // change form action to edit endpoint
+    const form = document.querySelector('#addProductModal form');
+    form.action = `/admin/edit-product/${product.id}`;
+
+    // update submit button text
+    form.querySelector('button[type="submit"]').textContent = "Update Product";
+
+    // options handling...
+    const optionsContainer = document.getElementById('productOptions');
+    optionsContainer.innerHTML = '';
+    if (product.options && Object.keys(product.options).length > 0) {
+        for (const [name, value] of Object.entries(product.options)) {
+            const optionDiv = document.createElement('div');
+            optionDiv.className = 'product-option d-flex align-items-center mb-2';
+            optionDiv.innerHTML = `
+                <input type="text" class="form-control me-2" name="product_options[]" value="${name}" placeholder="Option Name">
+                <input type="text" class="form-control me-2" name="option_values[]" value="${value}" placeholder="Option Value">
+                <button type="button" class="remove-option" onclick="removeOption(this)">Remove</button>
+            `;
+            optionsContainer.appendChild(optionDiv);
+        }
+    } else {
+        // fallback empty row
+        const optionDiv = document.createElement('div');
+        optionDiv.className = 'product-option d-flex align-items-center mb-2';
+        optionDiv.innerHTML = `
+            <input type="text" class="form-control me-2" name="product_options[]" placeholder="Option Name">
+            <input type="text" class="form-control me-2" name="option_values[]" placeholder="Option Value">
+            <button type="button" class="remove-option" onclick="removeOption(this)" style="display:none;">Remove</button>
+        `;
+        optionsContainer.appendChild(optionDiv);
+    }
+
+    new bootstrap.Modal(document.getElementById('addProductModal')).show();
+}
+
+
+// Add another option row
+function addOption() {
+    const optionsContainer = document.getElementById('productOptions');
+    const newOption = document.createElement('div');
+    newOption.className = 'product-option d-flex align-items-center';
+    newOption.innerHTML = `
+        <input type="text" class="form-control me-2" name="product_options[]" placeholder="Enter option name (e.g., Size, Color, Model)">
+        <input type="text" class="form-control me-2" name="option_values[]" placeholder="Enter option value (e.g., Large, Red, XL-500)">
+        <button type="button" class="remove-option" onclick="removeOption(this)">Remove</button>
+    `;
+    optionsContainer.appendChild(newOption);
+
+    // Show remove buttons for all options when there's more than one
+    const removeButtons = optionsContainer.querySelectorAll('.remove-option');
+    if (removeButtons.length > 1) {
+        removeButtons.forEach(button => button.style.display = 'inline-block');
+    }
+}
+
+// Remove option row
+function removeOption(button) {
+    const optionElement = button.parentElement;
+    optionElement.remove();
+
+    // Hide remove button if only one option remains
+    const removeButtons = document.querySelectorAll('#productOptions .remove-option');
+    if (removeButtons.length === 1) removeButtons[0].style.display = 'none';
+}
+
+// Reset form when modal is closed
+document.getElementById('addProductModal').addEventListener('hidden.bs.modal', function() {
+    const form = document.querySelector('#addProductModal form');
+    form.reset();
+    document.getElementById('productId').value = '';
+    const optionsContainer = document.getElementById('productOptions');
+    optionsContainer.innerHTML = `
+        <div class="product-option d-flex align-items-center">
+            <input type="text" class="form-control me-2" name="product_options[]" placeholder="Enter option name (e.g., Size, Color, Model)">
+            <input type="text" class="form-control me-2" name="option_values[]" placeholder="Enter option value (e.g., Large, Red, XL-500)">
+            <button type="button" class="remove-option" onclick="removeOption(this)" style="display:none;">Remove</button>
+        </div>
+    `;
+});
+    </script>
+
+</body>
+</html>

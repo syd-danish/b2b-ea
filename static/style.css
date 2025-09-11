@@ -1,0 +1,243 @@
+body {
+      background-color: #1a2b1f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+    }
+.sidebar{
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #2a3b2f;
+            transition: left 0.3s ease;
+            padding-top: 100px;
+            z-index: 1000;
+        }
+.sidebar.active {
+            left: 0;
+        }
+.sidebar-toggle {
+            position: fixed;
+            top: 80px;
+            left: 10px;
+            z-index: 1100;
+            background-color: #4a7c59;
+            border: none;
+            color: #ffffff;
+        }
+    .sidebar a{
+            font-size: 1.5rem;
+            color: #a8d5ba;
+            display: block;
+            padding: 14px 29px;
+            text-decoration: none;
+            transition: background 0.2s, padding-left 0.2s;
+        }
+        .sidebar a:hover {
+            color: #1a2b1f;
+            background-color: #6ba581;
+            padding-left: 41px;
+        }
+        .navbar {
+            background-color: #2a3b2f;
+            padding: 1.5rem;
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #ffffff !important;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+        }
+        .nav-link:hover {
+            color: #4a7c59 !important;
+        }
+        .nav-link.active {
+            color: #4a7c59 !important;
+            border-bottom: 2px solid #4a7c59;
+        }
+        .form-control {
+            background-color: #3a5e46;
+            border: 1px solid #4a7c59;
+            color: #ffffff;
+        }
+        .form-control:focus {
+            background-color: #3a5e46;
+            border-color: #6ba581;
+            box-shadow: 0 0 5px rgba(107, 165, 129, 0.5);
+            color: #ffffff;
+        }
+        .form-control::placeholder {
+            color: #a8d5ba;
+        }
+        .form-select {
+            background-color: #3a5e46;
+            border: 1px solid #4a7c59;
+            color: #ffffff;
+        }
+        .form-select:focus {
+            background-color: #3a5e46;
+            border-color: #6ba581;
+            box-shadow: 0 0 5px rgba(107, 165, 129, 0.5);
+            color: #ffffff;
+        }
+        .btn-success {
+            background-color: #4a7c59;
+            border-color: #4a7c59;
+        }
+        .btn-success:hover {
+            background-color: #6ba581;
+            border-color: #6ba581;
+        }
+        .btn-warning {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #000;
+        }
+        .btn-warning:hover {
+            background-color: #ffca2c;
+            border-color: #ffc720;
+            color: #000;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        .table-dark {
+            background-color: #3a5e46;
+        }
+        .table-dark th, .table-dark td {
+            border-color: #4a7c59;
+        }
+        .alert {
+            background-color: #3a5e46;
+            border-color: #4a7c59;
+            color: #ffffff;
+        }
+        .modal-content {
+            background-color: #2a3b2f;
+            color: #ffffff;
+        }
+        .modal-header {
+            border-bottom: 1px solid #4a7c59;
+        }
+        .modal-footer {
+            border-top: 1px solid #4a7c59;
+        }
+
+        /* Product Categories Styling */
+        .product-categories {
+            max-width: 100%;
+        }
+
+        .product-category {
+            background-color: #1e3323;
+            border: 1px solid #4a7c59;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .product-category:hover {
+            border-color: #6ba581;
+            box-shadow: 0 4px 8px rgba(74, 124, 89, 0.3);
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #2a3b2f 0%, #1e3323 100%);
+            padding: 20px 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(74, 124, 89, 0.2);
+        }
+
+        .category-header:hover {
+            background: linear-gradient(135deg, #3a5c42 0%, #2a3b2f 100%);
+            transform: translateY(-2px);
+        }
+
+        .category-header h4 {
+            color: #a8d5ba;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .category-arrow {
+            color: #6ba581;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .category-header[aria-expanded="true"] .category-arrow {
+            transform: rotate(180deg);
+        }
+
+        .category-content {
+            background-color: #1a2b1f;
+        }
+
+        .category-body {
+            padding: 25px;
+            border-top: 1px solid rgba(74, 124, 89, 0.1);
+        }
+
+        .category-body p {
+            color: #8bb899;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .category-header[aria-expanded="false"]:hover h4 {
+            color: #ffffff;
+        }
+
+        /* Product Options Styling */
+        .product-option {
+            background-color: #1e3323;
+            border: 1px solid #4a7c59;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .remove-option {
+            background-color: #dc3545;
+            border: none;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .remove-option:hover {
+            background-color: #c82333;
+        }
+
+        .add-option {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+
+        .add-option:hover {
+            background-color: #218838;
+        }
+
+        .form-label {
+            color: #a8d5ba;
+            font-weight: 500;
+        }
+
+        .text-muted {
+            color: #8bb899 !important;
+        }

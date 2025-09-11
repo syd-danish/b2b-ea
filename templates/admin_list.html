@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elfit Arabia - Admin List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <a href="/dashboard">Client Mode</a>
+        <a href="/reports">Job Reports</a>
+        <a href="/admin_list">Admin List</a>
+    </div>
+    <button class="btn sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <div class="main-content">
+        <div class="container mt-4">
+            <h2 class="mb-4">Admin Management</h2>
+
+            <!-- Flash Messages -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <!-- Admin List Table -->
+            <div class="card">
+                <div class="card-header">
+                    <h5>Current Admins</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Email</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for admin in admins %}
+                            <tr>
+                                <td>{{ loop.index }}</td>
+                                <td>{{ admin[1] }}</td>
+                                <td>
+                                    {% if admin[1].lower() != main_admin_email.lower() %}
+                                    <form method="POST" action="/admin/remove-admin/{{ admin[0] }}"
+                                          onsubmit="return confirm('Are you sure you want to remove this admin? They will be converted to a client.')"
+                                          style="display: inline;">
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-trash"></i> Remove
+                                        </button>
+                                    </form>
+                                    {% else %}
+                                    <span class="badge bg-primary">Main Admin</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% else %}
+                            <tr>
+                                <td colspan="3" class="text-center text-muted">No admins found</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Add Admin Form -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h5>Add New Admin</h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="/admin/add-admin">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="email"
+                                       class="form-control"
+                                       name="admin_email"
+                                       placeholder="Enter admin email address"
+                                       required>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit"
+                                        class="btn btn-success"
+                                        onclick="return confirm('Are you sure you want to add this user as an admin?')">
+                                    <i class="fas fa-plus"></i> Add Admin
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
