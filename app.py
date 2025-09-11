@@ -175,7 +175,6 @@ def edit_client_route(client_id):
 
     return redirect(url_for("manage_clients", edit=client_id))
 
-
 # Add these new routes after your existing manage_clients route:
 
 @app.route("/admin/manage-clients", methods=["GET", "POST"])
@@ -523,14 +522,12 @@ def edit_product(product_id):
     if not product:
         flash("Product not found")
         return redirect(url_for("manage_products"))
-
     options = {}
     if product[3]:
         try:
             options = json.loads(product[3])
         except:
             options = {}
-
     return render_template("admin.html", section="edit-product", edit_product=product, edit_options=options)
 
 
@@ -590,7 +587,6 @@ def get_products_by_category(category):
                 options = json.loads(product[3])
             except:
                 options = {}
-
         product_dict = {
             'id': product[0],
             'product_name': product[1],
@@ -676,7 +672,6 @@ def login():
             else:
                 flash("Invalid OTP. Please try again or request a new OTP.")
                 show_otp_section = True
-
     return render_template("login.html", show_otp_section=show_otp_section, identifier=identifier)
 
 
@@ -716,7 +711,6 @@ def add_admin(email):
         # If they were a client, update their user_type to admin
         if client:
             cursor.execute("UPDATE users SET user_type = 'admin' WHERE email = ?", (email.lower(),))
-
         conn.commit()
         return True
     except sqlite3.IntegrityError:
@@ -776,8 +770,6 @@ def is_admin_in_db(email):
     conn.close()
     return result is not None
 
-
-# Routes for admin management
 @app.route("/admin_list")
 def admin_list():
     """Admin list page - requires admin authentication"""
@@ -955,15 +947,9 @@ def dashboard():
         "dashboard.html",
         products_by_cat=products_by_cat,all_categories=all_categories
     )
-
-
-
-
-
-
-
 @app.route("/reports")
 def reports():
+
     return render_template("reports.html")
 @app.route("/logout")
 def logout():
