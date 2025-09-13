@@ -55,7 +55,10 @@
                                     {% endif %}
 
                                     {% if product.rate %}
-                                    <p class="mb-2 text-white"><strong>More Details:</strong> {{ product.rate }}</p>
+                                    <p class="mb-2 text-white"><strong>More Details:</strong>
+
+                                        <a href=" {{ product.rate }} "> {{ product.rate }} </a>
+                                    </p>
                                     {% endif %}
 
                                     <p class="mb-2 text-white"><strong>Stock:</strong>

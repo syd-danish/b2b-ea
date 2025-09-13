@@ -1,0 +1,2353 @@
+[
+  {
+    "id": 1,
+    "name": "Winch (3 Ton)",
+    "category": "Winches",
+    "options": {
+      "Pulling Tension": "30 KN",
+      "Engine Type": "Diesel, Water-Cooled",
+      "Rope Speed": "0-70mtr/min",
+      "Rope Diameter": "10mm",
+      "Rope Length": "500m",
+      "Engine Power Motor": "20HP/15 KW",
+      "axle": "Single or Double"
+    },
+    "rate": "https://elfitarabia.com/winches/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Winch (5 Ton)",
+    "category": "Winches",
+    "options": {
+      "Pulling Tension": "50 KN",
+      "Engine Type": "Diesel, Water-Cooled",
+      "Rope Speed": "0-60mtr/min",
+      "Rope Diameter": "12mm",
+      "Rope Length": "1000m",
+      "Engine Power Motor": "30HP/26 KW",
+      "axle": "Single or Double"
+    },
+    "rate": "https://elfitarabia.com/winches/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Winch (10 Ton)",
+    "category": "Winches",
+    "options": {
+      "Pulling Tension": "100 KN",
+      "Engine Type": "Diesel, Water-Cooled",
+      "Rope Speed": "0 - 40 m/min",
+      "Rope Diameter": "16mm",
+      "Rope Length": "1000m",
+      "Engine Power Motor": "40 HP / 36 kW",
+      "axle": "Double"
+    },
+    "rate": "https://elfitarabia.com/winches/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Winch (15 Ton)",
+    "category": "Winches",
+    "options": {
+      "Pulling Tension": "150kn",
+      "Engine Type": "Diesel, Water-Cooled",
+      "Rope Speed": "16m/min",
+      "Rope Diameter": "18mm",
+      "Rope Length": "600m",
+      "Engine Power Motor": "90 HP / 66 kW",
+      "axle": "Double"
+    },
+    "rate": "https://elfitarabia.com/winches/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Winch (2 Ton Electrical)",
+    "category": "Winches",
+    "options": {
+      "Pulling Tension": "20kn",
+      "Engine Type": "Electrical Motor",
+      "Rope Speed": "8-12mtr/min (Polyster Rope)",
+      "Rope Diameter": "12mm",
+      "Rope Length": "150m",
+      "Engine Power Motor": "1.5kw",
+      "axle": "Single"
+    },
+    "rate": "https://elfitarabia.com/winches/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Winch (3 Ton Electrical)",
+    "category": "Winches",
+    "options": {
+      "Pulling Tension": "30kn",
+      "Engine Type": "Electrical Motor",
+      "Rope Speed": "8-16mtr/min",
+      "Rope Diameter": "12mm",
+      "Rope Length": "200m",
+      "Engine Power Motor": "7.5kw",
+      "axle": "single"
+    },
+    "rate": "https://elfitarabia.com/winches/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Winch (5 Ton Electrical)",
+    "category": "Winches",
+    "options": {
+      "Pulling Tension": "50kn",
+      "Engine Type": "Electrical Motor",
+      "Rope Speed": "8-16mtr/min",
+      "Rope Diameter": "16mm",
+      "Rope Length": "500m",
+      "Engine Power Motor": "7.5kw",
+      "axle": "single"
+    },
+    "rate": "https://elfitarabia.com/winches/",
+    "stock": "in_stock",
+    "image": ""
+  },
+   {
+    "id": 8,
+    "name": "Cable Drum Trailer (3 Ton)",
+    "category": "Cable Drum Trailers",
+    "options": {
+      "Max Speed(km/hr)": "40",
+      "Minimum Drum Diameter": "1060",
+      "Max Drum Diameter": "2500",
+      "Max Drum Width": "1300",
+      "Spindle Diameter(mm)": "60-Solid",
+      "Total Weight(kg)": "3750"
+    },
+    "rate": "https://elfitarabia.com/cable-drum-trailers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": "Cable Drum Trailer (6 Ton)",
+    "category": "Cable Drum Trailers",
+    "options": {
+      "Max Speed(km/hr)": "24",
+      "Minimum Drum Diameter": "2000",
+      "Max Drum Diameter": "3200",
+      "Max Drum Width": "1700",
+      "Spindle Diameter(mm)": "70-Solid",
+      "Total Weight(kg)": "7300"
+    },
+    "rate": "https://elfitarabia.com/cable-drum-trailers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "name": "Cable Drum Trailer (10 Ton)",
+    "category": "Cable Drum Trailers",
+    "options": {
+      "Max Speed(km/hr)": "24",
+      "Minimum Drum Diameter": "2300",
+      "Max Drum Diameter": "3500",
+      "Max Drum Width": "1800",
+      "Spindle Diameter(mm)": "90-Solid",
+      "Total Weight(kg)": "11400"
+    },
+    "rate": "https://elfitarabia.com/cable-drum-trailers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "name": "Cable Drum Trailer (15 Ton)",
+    "category": "Cable Drum Trailers",
+    "options": {
+      "Max Speed(km/hr)": "40",
+      "Minimum Drum Diameter": "2300",
+      "Max Drum Diameter": "3500",
+      "Max Drum Width": "2150",
+      "Spindle Diameter(mm)": "100-solid",
+      "Total Weight(kg)": "17400"
+    },
+    "rate": "https://elfitarabia.com/cable-drum-trailers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "name": "Cable Drum Trailer (20 Ton)",
+    "category": "Cable Drum Trailers",
+    "options": {
+      "Max Speed(km/hr)": "24",
+      "Minimum Drum Diameter": "2400",
+      "Max Drum Diameter": "4800",
+      "Max Drum Width": "2500",
+      "Spindle Diameter(mm)": "115-solid",
+      "Total Weight(kg)": "23500"
+    },
+    "rate": "https://elfitarabia.com/cable-drum-trailers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "name": "Cable Drum Trailer (25 Ton)",
+    "category": "Cable Drum Trailers",
+    "options": {
+      "Max Speed(km/hr)": "16",
+      "Minimum Drum Diameter": "2500",
+      "Max Drum Diameter": "4800",
+      "Max Drum Width": "2600",
+      "Spindle Diameter(mm)": "125-solid",
+      "Total Weight(kg)": "29200"
+    },
+    "rate": "https://elfitarabia.com/cable-drum-trailers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "name": "Cable Drum Trailer (30 Ton)",
+    "category": "Cable Drum Trailers",
+    "options": {
+      "Max Speed(km/hr)": "16",
+      "Minimum Drum Diameter": "2500",
+      "Max Drum Diameter": "5000",
+      "Max Drum Width": "2800",
+      "Spindle Diameter(mm)": "130-solid",
+      "Total Weight(kg)": "34200"
+    },
+    "rate": "https://elfitarabia.com/cable-drum-trailers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 15,
+    "name": "Straight Pulling Application (Normal Straight)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "300",
+      "Width(mm)": "210",
+      "Height(mm)": "260",
+      "Weight(kg)": "5.5"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 16,
+    "name": "Straight Pulling Application (Heavy Duty)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "400",
+      "Width(mm)": "240",
+      "Height(mm)": "205",
+      "Weight(kg)": "6.5"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 17,
+    "name": "Straight Pulling Application (Long Base)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "580",
+      "Width(mm)": "220",
+      "Height(mm)": "190",
+      "Weight(kg)": "6.0"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 18,
+    "name": "Straight Pulling Application (Narrow Base)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "320",
+      "Width(mm)": "145",
+      "Height(mm)": "165",
+      "Weight(kg)": "2.75"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+{
+    "id": 19,
+    "name": "Triple Corner Roller (Type - 1)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "400",
+      "Width(mm)": "340",
+      "Height(mm)": "345",
+      "Weight(kg)": "14 kg"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 20,
+    "name": "Triple Corner Roller (Type - 2)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "400",
+      "Width(mm)": "340",
+      "Height(mm)": "345",
+      "Weight(kg)": "14 kg"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 21,
+    "name": "Double Corner Angled Roller",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "280",
+      "Width(mm)": "160",
+      "Height(mm)": "300",
+      "Weight(kg)": "9.5 kg"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  }, {
+    "id": 22,
+    "name": "Bend/Vertical Horizontal Roller",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "1590",
+      "Width(mm)": "345",
+      "Height(mm)": "300",
+      "Weight(kg)": "52 kg"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },{
+    "id": 23,
+    "name": "Draw Off Roller",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "1060",
+      "Width(mm)": "180",
+      "Height(mm)": "220",
+      "Weight(kg)": "15"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  }, {
+    "id": 24,
+    "name": "Cable Guide Roller (Heavy duty)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "1000",
+      "Width(mm)": "500",
+      "Height(mm)": "500",
+      "Weight(kg)": "35"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  }, {
+    "id": 25,
+    "name": "Cable guide & support roller (light duty)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "1000",
+      "Width(mm)": "500",
+      "Height(mm)": "500",
+      "Weight(kg)": "20"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  }, {
+    "id": 26,
+    "name": "Draw off Roller With Stand/Step Roller",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "1050",
+      "Width(mm)": "1800",
+      "Height(mm)": "0.25 - 3",
+      "Weight(kg)": "50 - 135"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 27,
+    "name": "Vertical Roller (Bend)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "900",
+      "Width(mm)": "150",
+      "Height(mm)": "310",
+      "Weight(kg)": "15"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 28,
+    "name": "Horizontal Roller (Bend)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "250",
+      "Width(mm)": "260",
+      "Height(mm)": "400",
+      "Weight(kg)": "13.5"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 29,
+    "name": "Skid Plate With Horizontal Roller",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "1400",
+      "Width(mm)": "260",
+      "Height(mm)": "400",
+      "Weight(kg)": "34"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 30,
+    "name": "Skid Roller (Bend)",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "230",
+      "Width(mm)": "230",
+      "Height(mm)": "300",
+      "Weight(kg)": "8.5"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 31,
+    "name": "Suspension Roller - Heavy Duty",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "250",
+      "Width(mm)": "120",
+      "Height(mm)": "440",
+      "Weight(kg)": "10"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 32,
+    "name": "Suspension Roller - Light Duty",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "900",
+      "Width(mm)": "150",
+      "Height(mm)": "310",
+      "Weight(kg)": "3"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 33,
+    "name": "Protection Roller",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "310",
+      "Width(mm)": "410",
+      "Height(mm)": "120",
+      "Weight(kg)": "10"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 34,
+    "name": "Manhole Triple Roller",
+    "category": "Rollers",
+    "options": {
+      "Length(mm)": "500",
+      "Width(mm)": "250",
+      "Height(mm)": "630",
+      "Weight(kg)": "15"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 35,
+    "name": "Bell Mouth Without Roller",
+    "category": "Rollers",
+    "options": {
+      "finish": "Galvanized",
+      "length": "76mm up to 210mm"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 36,
+    "name": "Bell Mouth With Roller",
+    "category": "Rollers",
+    "options": {
+      "finish": "Galvanized",
+      "length": "76mm up to 210mm"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 37,
+    "name": "Manhole Guide Roller Heavy Duty",
+    "category": "Rollers",
+    "options": {
+      "finish": "Galvanized",
+      "length": "560mm",
+      "width": "550mm",
+      "angle": "45 Degree"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 38,
+    "name": "Guide Roller With Angled Base",
+    "category": "Rollers",
+    "options": {
+      "finish": "Galvanized",
+      "length": "300mm",
+      "width": "245mm",
+      "height": "250mm",
+      "weight": "14.5kg"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 39,
+    "name": "Cable Protection Bend Without Stop",
+    "category": "Cable Laying",
+    "options": {
+      "finish": "Galvanized",
+      "description": "To be used to the Duct entrance to avoid damage to rope & cables"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 40,
+    "name": "Cable Protection Bend Stop",
+    "category": "Cable Laying",
+    "options": {
+      "finish": "Galvanized",
+      "description": "To be used to the Duct entrance to avoid damage to rope & cables"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 41,
+    "name": "Cable Protection With 4 Guide Rollers",
+    "category": "Cable Laying",
+    "options": {
+      "finish": "Galvanized",
+      "length": "110mm up to 200mm"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 42,
+    "name": "Cable Protection With Bend With Angled Base",
+    "category": "Cable Laying",
+    "options": {
+      "finish": "Galvanized",
+      "description": "Tiltable Cable Protection Bend With Pivot"
+    },
+    "rate": "https://elfitarabia.com/rollers/",
+    "stock": "in_stock",
+    "image": ""
+  },
+{
+  "id": 43,
+  "name": "Screw Jack (3 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "3 ton",
+    "Drum Min": "1.05 m",
+    "Drum Max": "1.6 m",
+    "Weight/Pair": "25 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 44,
+  "name": "Screw Jack (6 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "6 ton",
+    "Drum Min": "1.35 m",
+    "Drum Max": "2 m",
+    "Weight/Pair": "30 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 45,
+  "name": "Screw Jack (8 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "8 ton",
+    "Drum Min": "1.65 m",
+    "Drum Max": "2.2 m",
+    "Weight/Pair": "50 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 46,
+  "name": "Screw Jack (10 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "10 ton",
+    "Drum Min": "1.8 m",
+    "Drum Max": "2.5 m",
+    "Weight/Pair": "60 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 47,
+  "name": "Hydraulic Jack (5 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "5 ton",
+    "Drum Min": "0.8 m",
+    "Drum Max": "2.4 m",
+    "Weight/Pair": "105 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 48,
+  "name": "Hydraulic Jack (10 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "10 ton",
+    "Drum Min": "0.8 m",
+    "Drum Max": "2.4 m",
+    "Weight/Pair": "105 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 49,
+  "name": "Hydraulic Jack (15 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "15 ton",
+    "Drum Min": "1 m",
+    "Drum Max": "2.8 m",
+    "Weight/Pair": "225 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 50,
+  "name": "Plinth for Screw Jack (For Spindle 50-60 mm)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Description": "For Spindle 50-60 mm",
+    "Weight (kg)": "1.60"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 51,
+  "name": "Plinth for Screw Jack (For Spindle 80-90 mm)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Description": "For Spindle 80-90 mm",
+    "Weight (kg)": "125 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 52,
+  "name": "Plinth for Screw Jack (For Spindle 100-130 mm)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Description": "For Spindle 100-130 mm",
+    "Weight (kg)": "225 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 53,
+  "name": "Steel Spindle / Axle for Cable Drum (Hyd. Jack 5T)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Jack Capacity": "Hyd. Jack 5T",
+    "Diameter x Length Size (mm)": "70 x 2800 - Solid",
+    "Weight (kg)": "90"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 54,
+  "name": "Steel Spindle / Axle for Cable Drum (Hyd. Jack 10T)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Jack Capacity": "Hyd. Jack 10T",
+    "Diameter x Length Size (mm)": "90 x 3000 - Solid",
+    "Weight (kg)": "130"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 55,
+  "name": "Steel Spindle / Axle for Cable Drum (Screw Jack 3T)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Jack Capacity": "Screw Jack 3T",
+    "Diameter x Length Size (mm)": "50 x 1200 - Solid",
+    "Weight (kg)": "19"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 56,
+  "name": "Steel Spindle / Axle for Cable Drum (Screw Jack 6T)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Jack Capacity": "Screw Jack 6T",
+    "Diameter x Length Size (mm)": "70 x 2000 - Solid",
+    "Weight (kg)": "65"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 57,
+  "name": "Steel Spindle / Axle for Cable Drum (Screw Jack 8T)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Jack Capacity": "Screw Jack 8T",
+    "Diameter x Length Size (mm)": "80 x 2000 - Solid",
+    "Weight (kg)": "79"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 58,
+  "name": "Steel Spindle / Axle for Cable Drum (Hyd. H.D. 30T)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Jack Capacity": "Hyd. H.D. 30T",
+    "Diameter x Length Size (mm)": "130 x 4000 - Solid",
+    "Weight (kg)": "422"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 59,
+  "name": "Steel Spindle / Axle for Cable Drum (Tower Jack 20T)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Jack Capacity": "Tower Jack 20T",
+    "Diameter x Length Size (mm)": "115 x 3000 - Solid",
+    "Weight (kg)": "185"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 60,
+  "name": "Heavy Duty Jack (30 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "30 ton",
+    "Drum Max": "4 m",
+    "Weight/Pair": "325 kg x 2 Ea"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 61,
+  "name": "Tower Type Jack (20 Ton)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Capacity/Pair": "20 ton",
+    "Drum Min": "1.5 m",
+    "Drum Max": "3.4 m",
+    "Weight/Pair20": "-"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 62,
+  "name": "Cable Drum Carrier (1750 mm)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Drum Diameter": "1750 mm",
+    "Drum Width": "930 mm",
+    "Weight (kg)": "51"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 63,
+  "name": "Universal Cable Drum Stand (600 mm)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Drum Diameter": "600 mm",
+    "Drum Width": "500 mm",
+    "Weight (kg)": "7"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 64,
+  "name": "Cable Drum Rotators (Heavy Duty) (1000 mm)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Length": "1000 mm",
+    "Width": "225 mm",
+    "Drum Diameter Min": "300",
+    "Drum Diameter Max": "2400",
+    "Weight (kg)": "83 Kg"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 65,
+  "name": "Cable Drum Rotators (Light Duty) (630 mm)",
+  "category": "Cable Drum Lifting Jacks",
+  "options": {
+    "Length": "630 mm",
+    "Width": "550 mm",
+    "Drum Diameter Min": "120",
+    "Drum Diameter Max": "750",
+    "Weight (kg)": "18 Kg"
+  },
+  "rate": "https://elfitarabia.com/cable-drum-lifting-jacks/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 66,
+  "name": "Cable Locator (Cable Avoidance Tool)",
+  "category": "Cable Locators",
+  "options": {},
+  "rate": "https://elfitarabia.com/cable-locators/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 67,
+  "name": "Cable Locator (Cable Avoidance Tool XD)",
+  "category": "Cable Locators",
+  "options": {},
+  "rate": "https://elfitarabia.com/cable-locators/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 68,
+  "name": "Signal Generator SG-A",
+  "category": "Cable Locators",
+  "options": {
+    "Description": "The Signal Generators are designed to operate with the Cable Avoidance Tool in a wide range of tracing applications.\n A 33 KHz signal is applied to a cable and traced along its length with the Cable Avoidance Tool."
+  },
+  "rate": "https://elfitarabia.com/cable-locators/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 69,
+  "name": "Signal Generator SG-V",
+  "category": "Cable Locators",
+  "options": {
+    "Description": "The Signal Generators are designed to operate with the Cable Avoidance Tool in a wide range of tracing applications.\n A 33 KHz signal is applied to a cable and traced along its length with the Cable Avoidance Tool.\n"
+  },
+  "rate": "https://elfitarabia.com/cable-locators/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 70,
+  "name": "Measuring Wheels",
+  "category": "Cable Locators",
+  "options": {
+    "Wheel Diameter": "318 mm",
+    "Measuring Range": "-9,999.99 (Forward & Backward)"
+  },
+  "rate": "https://elfitarabia.com/cable-locators/",
+  "stock": "in_stock",
+  "image": ""
+},
+  {
+  "id": 71,
+  "name": "Reeling Machine (1:1.5 Ton)",
+  "category": "Reeling Machine",
+  "options": {
+    "Payload": "1:1.5 Ton",
+    "Reeling Speed": "40 rpm",
+    "Drum Diameter Max": "750 mm",
+    "Drum Width Max": "600 mm - Solid",
+    "Spindle Diameter": "60 mm - Solid"
+  },
+  "rate": "https://elfitarabia.com/reeling-machine/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 72,
+  "name": "Trailer Cum Reeling Machine (10 Ton)",
+  "category": "Reeling Machine",
+  "options": {
+    "Payload": "10 Ton",
+    "Speed": "24 km/hr",
+    "Drum Dia (Max & Min)": "3000 mm",
+    "Drum Width Maximum": "2000 mm",
+    "Spindle": "90 mm"
+  },
+  "rate": "https://elfitarabia.com/reeling-machine/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 73,
+  "name": "Swivel Link (2 Ton)",
+  "category": "Cable Pulling Grips & Swivel Link",
+  "options": {
+    "Working Load": "2 Ton",
+    "Pin Diameter (mm)": "10",
+    "Overall Length (mm)": "160",
+    "Overall Diameter (mm)": "30",
+    "Weight (kg)": "0.3"
+  },
+  "rate": "https://elfitarabia.com/cable-pulling-grips-and-swivel-link/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 74,
+  "name": "Swivel Link (3 Ton)",
+  "category": "Cable Pulling Grips & Swivel Link",
+  "options": {
+    "Working Load": "3 Ton",
+    "Pin Diameter (mm)": "12",
+    "Overall Length (mm)": "165",
+    "Overall Diameter (mm)": "40",
+    "Weight (kg)": "0.5"
+  },
+  "rate": "https://elfitarabia.com/cable-pulling-grips-and-swivel-link/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 75,
+  "name": "Swivel Link (5 Ton)",
+  "category": "Cable Pulling Grips & Swivel Link",
+  "options": {
+    "Working Load": "5 Ton",
+    "Pin Diameter (mm)": "16",
+    "Overall Length (mm)": "190",
+    "Overall Diameter (mm)": "50",
+    "Weight (kg)": "2.5"
+  },
+  "rate": "https://elfitarabia.com/cable-pulling-grips-and-swivel-link/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 76,
+  "name": "Swivel Link (10 Ton)",
+  "category": "Cable Pulling Grips & Swivel Link",
+  "options": {
+    "Working Load": "10 Ton",
+    "Pin Diameter (mm)": "19",
+    "Overall Length (mm)": "220",
+    "Overall Diameter (mm)": "65",
+    "Weight (kg)": "4"
+  },
+  "rate": "https://elfitarabia.com/cable-pulling-grips-and-swivel-link/",
+  "stock": "in_stock",
+  "image": ""
+},{
+"id": 77,
+  "name": "Shackle Fitting",
+  "category": "Duct Rods",
+  "options": {},
+  "rate": "https://elfitarabia.com/duct-rods/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 78,
+  "name": "Mini Harness",
+  "category": "Duct Rods",
+  "options": {},
+  "rate": "https://elfitarabia.com/duct-rods/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 79,
+  "name": "Flexible Leader",
+  "category": "Duct Rods",
+  "options": {},
+  "rate": "https://elfitarabia.com/duct-rods/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 80,
+  "name": "Swivel Coupling",
+  "category": "Duct Rods",
+  "options": {},
+  "rate": "https://elfitarabia.com/duct-rods/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 81,
+  "name": "Starting Roller",
+  "category": "Duct Rods",
+  "options": {},
+  "rate": "https://elfitarabia.com/duct-rods/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 82,
+  "name": "Tapered Head",
+  "category": "Duct Rods",
+  "options": {},
+  "rate": "https://elfitarabia.com/duct-rods/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 83,
+  "name": "Pulling Eye",
+  "category": "Duct Rods",
+  "options": {},
+  "rate": "https://elfitarabia.com/duct-rods/",
+  "stock": "in_stock",
+  "image": ""
+},
+  {
+  "id": 84,
+  "name": "Manual & Hydraulic Cutting & Crimping Tools (TO 0121 B)",
+  "category": "Hydraulic Cutting and Crimping Tools",
+  "options": {
+    "Product Code": "TO 0121 B",
+    "Cutting Range": "120mm",
+    "Output": "14 Ton"
+  },
+  "rate": "https://elfitarabia.com/hydraulic-cutting-and-crimping-tools/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 85,
+  "name": "Manual & Hydraulic Cutting & Crimping Tools (TO 0121 B)",
+  "category": "Hydraulic Cutting and Crimping Tools",
+  "options": {
+    "Product Code": "TO 0121 B",
+    "Crimping Range": "16mm - 630mm",
+    "Output": "18 Ton"
+  },
+  "rate": "https://elfitarabia.com/hydraulic-cutting-and-crimping-tools/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 86,
+  "name": "Hydraulic Hand & Foot Operated Pump (TO-0122 B)",
+  "category": "Hydraulic Cutting and Crimping Tools",
+  "options": {
+    "Product Code": "TO-0122 B",
+    "Description": "Hydraulic Hand Pump",
+    "Reservoir Volume (CC)": "700"
+  },
+  "rate": "https://elfitarabia.com/hydraulic-cutting-and-crimping-tools/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 87,
+  "name": "Hydraulic Hand & Foot Operated Pump (TO-0123 B)",
+  "category": "Hydraulic Cutting and Crimping Tools",
+  "options": {
+    "Product Code": "TO-0123 B",
+    "Description": "Hydraulic Hand Pump",
+    "Reservoir Volume (CC)": "700"
+  },
+  "rate": "https://elfitarabia.com/hydraulic-cutting-and-crimping-tools/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 88,
+  "name": "PP (Polypropylene) Rope",
+  "category": "Ropes",
+  "options": {
+    "Diameter Range": "6 mm to 48 mm",
+    "Strands": "3 strands, 4 strands, 8 strands",
+    "Features": "UV protection"
+  },
+  "rate": "https://elfitarabia.com/ropes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 89,
+  "name": "HDPE (High Density Polyethylene) Rope",
+  "category": "Ropes",
+  "options": {
+    "Diameter Range": "2 mm to 48 mm (3 strands), 8 mm to 20 mm (4 strands)",
+    "Features": "Different colors, Raw material from Sabic, brouge and other internationally standardised materials"
+  },
+  "rate": "https://elfitarabia.com/ropes/",
+  "stock": "in_stock",
+  "image": ""
+},
+  {
+  "id": 90,
+  "name": "Plastic Warning Tape (150mm x 200 Mic x 300m)",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "200 Mic",
+    "Length": "300m"
+  },
+  "rate": "https://elfitarabia.com/plastic-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 91,
+  "name": "Plastic Warning Tape (150mm x 150 Mic x 300m)",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "150 Mic",
+    "Length": "300m"
+  },
+  "rate": "https://elfitarabia.com/plastic-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 92,
+  "name": "Plastic Warning Tape (300mm x 150 Mic x 300m)",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "300mm",
+    "Thickness": "150 Mic",
+    "Length": "300m"
+  },
+  "rate": "https://elfitarabia.com/plastic-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 93,
+  "name": "Plastic Warning Tape (450mm x 150 Mic x 300m)",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "450mm",
+    "Thickness": "150 Mic",
+    "Length": "300m"
+  },
+  "rate": "https://elfitarabia.com/plastic-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 94,
+  "name": "Plastic Warning Tape (450mm x 200 Mic x 300m)",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "450mm",
+    "Thickness": "200 Mic",
+    "Length": "300m"
+  },
+  "rate": "https://elfitarabia.com/plastic-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+
+  {
+  "id": 95,
+  "name": "Detectable Warning Tape 150mm (100 Mic x 305m) - Buried Raw Water Line",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "100 Mic",
+    "Length": "305m",
+    "Type": "Buried Raw Water Line"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 96,
+  "name": "Detectable Warning Tape 150mm (150 Mic x 305m) - Fiber Optic Cable",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "150 Mic",
+    "Length": "305m",
+    "Type": "Fiber Optic Cable Buried Below"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 97,
+  "name": "Detectable Warning Tape 450mm (150 Mic x 305m) - Buried Telecommunication Cable",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "450mm",
+    "Thickness": "150 Mic",
+    "Length": "305m",
+    "Type": "Buried Telecommunication Cable"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 98,
+  "name": "Detectable Warning Tape 300mm (150 Mic x 305m) - Telecommunications Cable",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "300mm",
+    "Thickness": "150 Mic",
+    "Length": "305m",
+    "Type": "Telecommunications Cable Below"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 99,
+  "name": "Detectable Warning Tape 300mm (200 Mic x 305m) - Fiber Optic Below",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "300mm",
+    "Thickness": "200 Mic",
+    "Length": "305m",
+    "Type": "Fiber Optic Below"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 100,
+  "name": "Detectable Warning Tape 150mm (100 Mic x 305m) - Cold Water Line",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "100 Mic",
+    "Length": "305m",
+    "Type": "Cold Water Line Buried Below"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 101,
+  "name": "Detectable Warning Tape 150mm (100 Mic x 305m) - Electrical Cable",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "100 Mic",
+    "Length": "305m",
+    "Type": "Electrical Cable Buried Below"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 102,
+  "name": "Detectable Warning Tape 150mm (100 Mic x 305m) - Buried Fire Fighting Line",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "100 Mic",
+    "Length": "305m",
+    "Type": "Buried Fire Fighting Line Below"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 103,
+  "name": "Detectable Warning Tape 150mm (100 Mic x 305m) - Buried Irrigation Water Line",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "100 Mic",
+    "Length": "305m",
+    "Type": "Buried Irrigation Water Line"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 104,
+  "name": "Detectable Warning Tape 150mm (203 Mic x 305m) - Buried Telecommunication Cable",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "203 Mic",
+    "Length": "305m",
+    "Type": "Buried Telecommunication Cable"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 105,
+  "name": "Detectable Warning Tape 200mm (400 Mic x 305m) - Buried Telecommunication Cable",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "200mm",
+    "Thickness": "400 Mic",
+    "Length": "305m",
+    "Type": "Buried Telecommunication Cable"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+  "id": 106,
+  "name": "Detectable Warning Tape 150mm (200 Mic x 305m) - Power Cable",
+  "category": "Warning Tapes",
+  "options": {
+    "Width": "150mm",
+    "Thickness": "200 Mic",
+    "Length": "305m",
+    "Type": "Power Cable"
+  },
+  "rate": "https://elfitarabia.com/detectable-warning-tapes/",
+  "stock": "in_stock",
+  "image": ""
+},
+{
+    "id": 107,
+    "name": "PECD Sub Duct Coupling 27mm White with O Ring",
+    "category": "Duct",
+    "options": {
+      "Size": "27mm",
+      "Color": "White",
+      "Type": "With O Ring",
+      "Material": "Teflon with 4 Rubber O Rings",
+      "Application": "Using in 110 MM PEC Duct Closure"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 108,
+    "name": "PECD Sub Duct Coupling 29mm White with O Ring",
+    "category": "Duct",
+    "options": {
+      "Size": "29mm",
+      "Color": "White",
+      "Type": "With O Ring",
+      "Material": "Teflon with 4 Rubber O Rings",
+      "Application": "Using in 110 MM PEC Duct Closure"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 109,
+    "name": "PECD Sub Duct Coupling 38mm White with O Ring",
+    "category": "Duct",
+    "options": {
+      "Size": "38mm",
+      "Color": "White",
+      "Type": "With O Ring",
+      "Material": "Teflon with 4 Rubber O Rings",
+      "Application": "Using in 110 MM PEC Duct Closure"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 110,
+    "name": "PECD Sub Duct Coupling 27mm White with O Ring (Alternate)",
+    "category": "Duct",
+    "options": {
+      "Size": "27mm",
+      "Color": "White",
+      "Type": "With O Ring",
+      "Material": "Teflon with 4 Rubber O Rings",
+      "Application": "Using in 110 MM PEC Duct Closure"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 111,
+    "name": "PECD 110mm with 4-38mm Sub Duct",
+    "category": "Duct",
+    "options": {
+      "Main Duct Size": "110mm",
+      "Sub Duct Size": "38mm (4 sub ducts)",
+      "Material": "High Density Polyethylene (HDPE)"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 112,
+    "name": "PECD 110mm with 7-29mm Sub Duct",
+    "category": "Duct",
+    "options": {
+      "Main Duct Size": "110mm",
+      "Sub Duct Size": "29mm (7 sub ducts)",
+      "Material": "High Density Polyethylene (HDPE)"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 113,
+    "name": "PECD 110mm with 3-42mm Sub Duct",
+    "category": "Duct",
+    "options": {
+      "Main Duct Size": "110mm",
+      "Sub Duct Size": "42mm (3 sub ducts)",
+      "Material": "High Density Polyethylene (HDPE)"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 114,
+    "name": "PECD 110mm with 5-33mm Sub Duct",
+    "category": "Duct",
+    "options": {
+      "Main Duct Size": "110mm",
+      "Sub Duct Size": "33mm (5 sub ducts)",
+      "Material": "High Density Polyethylene (HDPE)"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 115,
+    "name": "PE Corrugated Duct 110mm Closure",
+    "category": "Duct",
+    "options": {
+      "Size": "110mm",
+      "Color": "Black",
+      "Material": "High Density Polyethylene (HDPE)",
+      "Application": "Suitable for 110 MM COD DUCT & COD Duct with Subducts (3/4/5/7)"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 116,
+    "name": "PE Corrugated Duct 77mm Closure",
+    "category": "Duct",
+    "options": {
+      "Size": "77mm",
+      "Color": "Black",
+      "Material": "High Density Polyethylene (HDPE)",
+      "Application": "To ensure and secure PECD joints with Sub Ducts"
+    },
+    "rate": "https://elfitarabia.com/pe-corrugated-duct/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 117,
+    "name": "PECD Manhole Connector 110mm, Orange",
+    "category": "Duct",
+    "options": {
+      "Size": "110mm",
+      "Color": "Orange",
+      "Application": "To connect the main corrugated HDPE duct (PECD) to manhole or hand hole duct entry holes"
+    },
+    "rate": "https://elfitarabia.com/pecd-duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 118,
+    "name": "PECD Endcap 110mm, Orange",
+    "category": "Duct",
+    "options": {
+      "Size": "110mm",
+      "Color": "Orange",
+      "Application": "Serves as End Cap to prevent entry of dust and particles during transportation and storage at work site"
+    },
+    "rate": "https://elfitarabia.com/pecd-duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 119,
+    "name": "PECD Coupling 110mm, Orange",
+    "category": "Duct",
+    "options": {
+      "Size": "110mm",
+      "Color": "Orange",
+      "Application": "To connect and secure PECD joints"
+    },
+    "rate": "https://elfitarabia.com/pecd-duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 120,
+    "name": "PECD Duct Closure 110mm, Black",
+    "category": "Duct",
+    "options": {
+      "Size": "110mm",
+      "Color": "Black",
+      "Application": "Suitable for 110 MM COD DUCT & COD Duct with Subducts (3/4/5/7) to ensure and secure PECD joints with Sub Ducts"
+    },
+    "rate": "https://elfitarabia.com/pecd-duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 121,
+    "name": "Duct Mandrel - Steel",
+    "category": "Duct",
+    "options": {
+      "Material": "Steel",
+      "Application": "Heavy Duty Duct Mandrel with pulling eyes on each end for removing obstructions from the duct. Body made of mild steel"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 122,
+    "name": "Duct Mandrel - Nylon",
+    "category": "Duct",
+    "options": {
+      "Material": "Nylon",
+      "Application": "Duct Mandrel with pulling eyes on each end for removing obstructions from the duct. Body made of nylon brushes to be used at the ends"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 123,
+    "name": "Cable Pulling Lubricant",
+    "category": "Duct",
+    "options": {
+      "Application": "Recommended for long pulls, high shear situations and multiple bend pulls. It leaves a lubricating film after its water evaporates"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 124,
+    "name": "Simplex Plug 32mm",
+    "category": "Duct",
+    "options": {
+      "Size": "32mm",
+      "Features": "Water-tight and air-tight. Simple installation around in-place cables. Seals all types of inner duct. Easy to retrofit. Wide cable sealing range. Installs and removes by hand"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 125,
+    "name": "Simplex Plug 38mm",
+    "category": "Duct",
+    "options": {
+      "Size": "38mm",
+      "Features": "Water-tight and air-tight. Simple installation around in-place cables. Seals all types of inner duct. Easy to retrofit. Wide cable sealing range. Installs and removes by hand"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 126,
+    "name": "Micro Duct Coupler (5/3.5mm to 20/16mm)",
+    "category": "Duct",
+    "options": {
+      "Sizes": "5/3.5mm, 7/3.5mm, 7/4mm, 8/3.5mm, 8/5mm, 10/8mm, 12/10mm, 14/10mm, 16/12mm, 16/14mm, 20/16mm",
+      "Features": "The Push-Fit Connectors make splicing MicroDuct fast and easy. Simply push the MicroDucts into the center of the coupler. No tools are required. The coupler can be connected and disconnected 10 times and still maintain the high performance requirements for air blown installation systems"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 127,
+    "name": "Heavy Duty Wire Brush Mandrel",
+    "category": "Duct",
+    "options": {
+      "Application": "Heavy Duty wire brush mandrel with pulling eyes on each end for removing obstructions from the duct"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 128,
+    "name": "Duct Plug 1\" (32mm) Pulling Eye Type",
+    "category": "Duct",
+    "options": {
+      "Size": "32mm",
+      "Type": "Pulling Eye",
+      "Features": "Duct plug are used to close and tightening the sub duct and mini duct end. Water-tight and gas-tight Removable and reusable"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 129,
+    "name": "Duct Plug 38mm Pulling Eye Type",
+    "category": "Duct",
+    "options": {
+      "Size": "38mm",
+      "Type": "Pulling Eye",
+      "Features": "Duct plug are used to close and tightening the sub duct and mini duct end. Water-tight and gas-tight Removable and reusable"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 130,
+    "name": "Duct Plug 4\" (110mm) Pulling Eye Type",
+    "category": "Duct",
+    "options": {
+      "Size": "110mm",
+      "Type": "Pulling Eye",
+      "Features": "Duct plug are used to close and tightening the sub duct and mini duct end. Water-tight and gas-tight Removable and reusable"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 131,
+    "name": "Duct Plug 6\" (160mm) Pulling Eye Type",
+    "category": "Duct",
+    "options": {
+      "Size": "160mm",
+      "Type": "Pulling Eye",
+      "Features": "Duct plug are used to close and tightening the sub duct and mini duct end. Water-tight and gas-tight Removable and reusable"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 132,
+    "name": "Anchor Block 4 x 32mm x 110mm, Open Type, Red Color",
+    "category": "Duct",
+    "options": {
+      "Size": "4 x 32mm x 110mm",
+      "Type": "Open Type",
+      "Color": "Red",
+      "Features": "Anchors and organizes subducts or multiple duct systems. Eliminates duct-edge abrasion to cables. Excellent for supporting cables at the tops of risers. Expandable gasket allows for expansion and contraction of cables or subducts without leakage. Slit design for easy installation"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 133,
+    "name": "Micro Duct End Cap (3mm to 20mm)",
+    "category": "Duct",
+    "options": {
+      "Sizes": "3mm, 4mm, 5mm, 6mm, 7mm, 8mm, 10mm, 12mm, 14mm, 16mm, 20mm",
+      "Features": "To keep MicroDuct networks free of debris, seal the system with Push-Fit End Caps. With the same functionality as the Push-Fit Connectors, installation simply involves pushing the MicroDuct into the End Cap. The End Cap can be attached and removed 10 times while still maintaining the same high performance characteristics"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 134,
+    "name": "Micro Duct Threaded Coupling, Grey Color (20mm to 50mm)",
+    "category": "Duct",
+    "options": {
+      "Sizes": "20mm, 25mm, 28mm, 32mm, 40mm, 50mm",
+      "Color": "Grey",
+      "Features": "PP coupling are used to joint the pipes & subducts in threaded manner"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+    "id": 135,
+    "name": "Micro Duct End Cap, Grey Color (20mm to 50mm)",
+    "category": "Duct",
+    "options": {
+      "Sizes": "20mm, 25mm, 28mm, 32mm, 40mm, 50mm",
+      "Color": "Grey",
+      "Features": "PP coupling are used to joint the pipes & subducts in threaded manner"
+    },
+    "rate": "https://elfitarabia.com/duct-accessories/",
+    "stock": "in_stock",
+    "image": ""
+  },
+  {
+"id": 136,
+"name": "Spacers 25mm 4 Way Base",
+"category": "Duct",
+"options": {
+"Sizes": "25mm"
+},
+"rate": "https://elfitarabia.com/spacers/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 137,
+"name": "Spacers 32mm 4 Way Base & Intermediate",
+"category": "Duct",
+"options": {
+"Sizes": "32mm"
+},
+"rate": "https://elfitarabia.com/spacers/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 138,
+"name": "Spacers 50mm 3 Way Universal",
+"category": "Duct",
+"options": {
+"Sizes": "50mm"
+},
+"rate": "https://elfitarabia.com/spacers/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 139,
+"name": "Spacers 20mm 5 Way Intermediate & Base",
+"category": "Duct",
+"options": {
+"Sizes": "20mm"
+},
+"rate": "https://elfitarabia.com/spacers/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 140,
+"name": "Spacers 50mm 2 Way Universal",
+"category": "Duct",
+"options": {
+"Sizes": "50mm"
+},
+"rate": "https://elfitarabia.com/spacers/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 141,
+"name": "All Spacers Upto 2 to 110mm Base & Intermediate",
+"category": "Duct",
+"options": {
+"Sizes": "63mm, 75mm, 90mm, 110mm"
+},
+"rate": "https://elfitarabia.com/spacers/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 142,
+"name": "MS Spacer as per Customer Requirement for Mobily, Zain etc.",
+"category": "Duct",
+"options": {
+"Sizes": "Custom"
+},
+"rate": "https://elfitarabia.com/spacers/",
+"stock": "in_stock",
+"image": ""
+},
+  {
+"id": 143,
+"name": "HDPE Pipe SDR 13.6, PN 12.5, PE-100 300 MTR/ROLL",
+"category": "Pipes",
+"options": {
+"Sizes": "20mm, 25mm, 32mm, 40mm, 50mm, 63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm",
+"Color": "White"
+},
+"rate": "https://elfitarabia.com/hdpe-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 144,
+"name": "HDPE Pipe SDR 11, PN 16, PE-100 300 MTR/ROLL",
+"category": "Pipes",
+"options": {
+"Sizes": "20mm, 25mm, 32mm, 40mm, 50mm, 63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm",
+"Color": "Orange"
+},
+"rate": "https://elfitarabia.com/hdpe-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 145,
+"name": "HDPE Pipe SDR 9, PN 20, PE-100 300 MTR/ROLL",
+"category": "Pipes",
+"options": {
+"Sizes": "20mm, 25mm, 32mm, 40mm, 50mm, 63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm"
+},
+"rate": "https://elfitarabia.com/hdpe-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 146,
+"name": "HDPE Pipe SDR 41, PN 4, PE-100 300 MTR/ROLL",
+"category": "Pipes",
+"options": {
+"Sizes": "63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm",
+"Color": "Blue"
+},
+"rate": "https://elfitarabia.com/hdpe-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 147,
+"name": "HDPE Pipe SDR 26, PN 6.3, PE-100 300 MTR/ROLL",
+"category": "Pipes",
+"options": {
+"Sizes": "40mm, 50mm, 63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm",
+"Color": "Black"
+},
+"rate": "https://elfitarabia.com/hdpe-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 148,
+"name": "HDPE Pipe SDR 17, PN 10, PE-100 300 MTR/ROLL",
+"category": "Pipes",
+"options": {
+"Sizes": "25mm, 32mm, 40mm, 50mm, 63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm",
+"Color": "Black"
+},
+"rate": "https://elfitarabia.com/hdpe-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+  {
+"id": 149,
+"name": "UPVC Pipe S/J, 6 MTR LONG, Class 1, 2, 3, 4 & 5 Grey Color",
+"category": "pipes",
+"options": {
+"Sizes": "20mm, 25mm, 32mm, 40mm, 50mm, 63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm",
+"Color": "Grey"
+},
+"rate": "https://elfitarabia.com/upvc-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 150,
+"name": "UPVC Pipe S/J, 6 MTR LONG, Class 1, 2, 3, 4 & 5 Grey Color",
+"category": "pipes",
+"options": {
+"Sizes": "63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm, 225mm, 250mm, 280mm, 315mm, 355mm, 400mm, 450mm, 500mm",
+"Color": "Grey"
+},
+"rate": "https://elfitarabia.com/upvc-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 151,
+"name": "UPVC Pipe Schedule 40 & 80, TC-2 & TC-6, 6 MTR LONG, Grey Color",
+"category": "pipes",
+"options": {
+"Sizes": "1/2 inch, 3/4 inch, 1 inch, 1-1/4 inch, 1-1/2 inch, 2 inch, 2 1/2 inch, 3 inch, 4 inch, 5 inch, 6 inch, 8 inch",
+"Color": "Grey"
+},
+"rate": "https://elfitarabia.com/upvc-pipe/",
+"stock": "in_stock",
+"image": ""
+},
+  {
+"id": 152,
+"name": "PVC 45° Y Branch",
+"category": "Pipes",
+"options": {
+"Sizes": "40x40x40mm, 50x40x50mm, 50x50x50mm, 75x50x75mm, 75x75x75mm, 110x50x110mm, 110x75x110mm, 110x110x110mm, 160x75x160mm, 160x110x160mm, 160x160x160mm, 200x110x200mm, 200x160x200mm, 200x200x200mm, 250x160x250mm, 250x250x250mm"
+},
+"rate": "https://elfitarabia.com/upvc-pipe-fittings/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 153,
+"name": "UPVC Bell End, Class 3, Class 4 & Class 5, Grey Color",
+"category": "Pipes",
+"options": {
+"Sizes": "20mm, 25mm, 32mm, 50mm, 75mm, 110mm, 114mm, 160mm, 200mm",
+"Color": "Grey"
+},
+"rate": "https://elfitarabia.com/upvc-pipe-fittings/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 154,
+"name": "UPVC Long Bend, 45° Grey Color",
+"category": "Pipes",
+"options": {
+"Sizes": "63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm",
+"Color": "Grey"
+},
+"rate": "https://elfitarabia.com/upvc-pipe-fittings/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 155,
+"name": "UPVC Long Bend, 90° Grey Color",
+"category": "Pipes",
+"options": {
+"Sizes": "63mm, 75mm, 90mm, 110mm, 125mm, 140mm, 160mm, 180mm, 200mm",
+"Color": "Grey"
+},
+"rate": "https://elfitarabia.com/upvc-pipe-fittings/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 156,
+"name": "PVC 45° Elbow",
+"category": "Pipes",
+"options": {
+"Sizes": "40mm, 50mm, 75mm, 110mm, 160mm, 200mm, 250mm, 315mm"
+},
+"rate": "https://elfitarabia.com/upvc-pipe-fittings/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 157,
+"name": "PVC 45° Elbow (Suitable for Butt Fusion & Electro Fusion)",
+"category": "Pipes",
+"options": {
+"Sizes": "40mm, 50mm, 75mm, 110mm, 160mm, 200mm, 250mm, 315mm"
+},
+"rate": "https://elfitarabia.com/upvc-pipe-fittings/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 158,
+"name": "PVC 90° Waste Elbow, Size 50mm, Length 57mm",
+"category": "Pipes",
+"options": {
+"Sizes": "50mm"
+},
+"rate": "https://elfitarabia.com/upvc-pipe-fittings/",
+"stock": "in_stock",
+"image": ""
+},
+  {
+"id": 159,
+"name": "Fiber Marker Post Bevel Type",
+"category": "Other Products",
+"options": {
+"Color": "Orange"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 160,
+"name": "Wooden Marker Post 100 mm X 100 mm X 1200 mm Height, White Color",
+"category": "Other Products",
+"options": {
+"Sizes": "100mm x 100mm x 1200mm",
+"Color": "White"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 161,
+"name": "Marker Post with Concrete Base 1.1MTR (ELI STD)",
+"category": "Other Products",
+"options": {
+"Sizes": "1.1MTR"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 162,
+"name": "Cable Bracket 250MM, 4MM (T)",
+"category": "Other Products",
+"options": {
+"Sizes": "250mm, 4mm"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 163,
+"name": "Cable Bracket Support 500MM TO 2700MM",
+"category": "Other Products",
+"options": {
+"Sizes": "500mm to 2700mm"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 164,
+"name": "Fiber Marker Post 120(W) X 120(L) X 1400(H) mm",
+"category": "Other Products",
+"options": {
+"Sizes": "120mm x 120mm x 1400mm"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 165,
+"name": "Fiber Marker Post 120(W) X 120(L) X 1400(H) mm-HOLLOW TYPE WITHOUT PU-FOAM",
+"category": "Other Products",
+"options": {
+"Sizes": "120mm x 120mm x 1400mm"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 166,
+"name": "Marker Post with Concrete Base 1.2MTR (DU STD)",
+"category": "Other Products",
+"options": {
+"Sizes": "1.2MTR"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 167,
+"name": "GI Marker Post 60mm Dia x 1.2mm Thick x 1.0 Mtr Long",
+"category": "Other Products",
+"options": {
+"Sizes": "60mm Dia x 1.2mm Thick x 1.0 Mtr"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 168,
+"name": "Concrete Cable Protection Slab: size: 305mm X 305mm X 76mm",
+"category": "Other Products",
+"options": {
+"Sizes": "305mm x 305mm x 76mm"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 169,
+"name": "Flexible Marker Post 60mm Dia x 2.5mm Thick x 1200 mm Long",
+"category": "Other Products",
+"options": {
+"Sizes": "60mm Dia x 2.5mm Thick x 1200 mm"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 170,
+"name": "Flexible Marker Post 60mm Dia x 2.5mm Thick x 1200 mm Long WITH SOIL ANCHOR",
+"category": "Other Products",
+"options": {
+"Sizes": "60mm Dia x 2.5mm Thick x 1200 mm"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 171,
+"name": "Protection Post 168MM X 3MM X 2 MTR HDG, RED AND WHITE",
+"category": "Other Products",
+"options": {
+"Sizes": "168mm x 3mm x 2 MTR",
+"Color": "Red and White"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 172,
+"name": "U STEEL GUARD 60MM X 60MM X 1.6 MTR UPTO 2.4 MTR",
+"category": "Other Products",
+"options": {
+"Sizes": "60mm x 60mm x 1.6 MTR to 2.4 MTR"
+},
+"rate": "https://elfitarabia.com/cable-marker-post-others-products/",
+"stock": "in_stock",
+"image": ""
+},
+
+  {
+"id": 173,
+"name": "Solar Home Light",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 174,
+"name": "Solar Street Light",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 175,
+"name": "Solar Power Computer UPS",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 176,
+"name": "Solar Tray & Railway Gate Signal Light",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 177,
+"name": "Solar Thermal Water Heater",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 178,
+"name": "Solar Path Finder",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 179,
+"name": "Solar Power Generating System",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 180,
+"name": "Solar Aviation Light",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 181,
+"name": "Solar PV Hybrid Generation System",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 182,
+"name": "Solar PV Charge Controller",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+},
+{
+"id": 183,
+"name": "Solar Inverters",
+"category": "Solar",
+"options": {
+"Features": "Energetically monetize customized initiatives rather than progressive channels lead egestically"
+},
+"rate": "https://elfitarabia.com/solar/",
+"stock": "in_stock",
+"image": ""
+}
+
+]

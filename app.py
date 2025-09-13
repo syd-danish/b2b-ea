@@ -4,7 +4,6 @@ from email.mime.text import MIMEText
 from dotenv import load_dotenv
 from datetime import datetime
 from werkzeug.utils import secure_filename
-
 load_dotenv()
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_APP_SECRET_KEY")
@@ -19,8 +18,6 @@ MAX_CONTENT_LENGTH = 5 * 1024 * 1024  # 5MB max file size
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
-
 
 def init_db():
     conn = sqlite3.connect(DATABASE)
@@ -310,16 +307,7 @@ Elfit Arabia Team"""
 
 
 
-@app.route("/admin/client-orders")
-def client_orders():
-    """Client orders section - requires admin authentication"""
-    if not session.get("authenticated"):
-        flash("Please login to access the admin panel")
-        return redirect(url_for("login"))
-    if not session.get("is_admin") or not is_admin_in_db(session.get("user_email")):
-        flash("Admin access required")
-        return redirect(url_for("dashboard"))
-    return render_template("admin.html", section="client-orders")
+
 
 
 @app.route("/admin/manage-products")
@@ -333,19 +321,18 @@ def manage_products():
 
     # Define categories
     all_categories = [
-        "Cable Laying", "Warning Tapes", "Manhole", "Ropes", "Duct",
+        "Winches", "Cable Drum Trailers", "Rollers", "Cable Drum Lifting Jacks", "Cable Locators", "Reeling Machine",
+        "Cable Pulling Grips & Swivel Link", "Duct Rods", "Hydraulic Cutting and Crimping Tools"
+        , "Warning Tapes", "Manhole", "Ropes", "Duct",
         "Telecom", "Fiber Optic", "Electrical", "Solar", "Pipes",
         "Other Products"
     ]
-
-
     # Connect to database
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM products ORDER BY category, product_name")
     products_raw = cursor.fetchall()
     conn.close()
-
     # Convert products to dictionaries
     products_list = []
     for p in products_raw:
@@ -860,20 +847,17 @@ def place_order():
     if not product_id or not expected_date or not quantity_value or not quantity_unit:
         flash("Missing required fields", "danger")
         return redirect(url_for("dashboard"))
-
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
     cursor.execute("SELECT product_name FROM products WHERE id = ?", (product_id,))
     row = cursor.fetchone()
     conn.close()
-
     if not row:
         flash("Invalid product selected", "danger")
         return redirect(url_for("dashboard"))
-
-    product_name = row[0]  # ✅ Securely fetched from DB
+    product_name = row[0] if row else None
+    print(product_name)
     quantity = f"{quantity_value} {quantity_unit}".strip()
-    # Save order
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
     cursor.execute("""
@@ -897,7 +881,6 @@ def place_order():
     msg["Subject"] = subject
     msg["From"] = email_user
     msg["To"] = admin_email
-
     try:
         with smtplib.SMTP("smtp.gmail.com", 587) as server:
             server.starttls()
@@ -934,7 +917,9 @@ def dashboard():
         })
 
     all_categories = [
-        "Cable Laying", "Warning Tapes", "Manhole", "Ropes", "Duct",
+        "Winches", "Cable Drum Trailers","Rollers","Cable Drum Lifting Jacks","Cable Locators","Reeling Machine",
+        "Cable Pulling Grips & Swivel Link","Duct Rods", "Hydraulic Cutting and Crimping Tools"
+        "Warning Tapes", "Manhole", "Ropes", "Duct",
         "Telecom", "Fiber Optic", "Electrical", "Solar", "Pipes", "Other Products"
     ]
     products_by_cat = {cat: [] for cat in all_categories}
@@ -942,14 +927,62 @@ def dashboard():
         cat = product["category"] if product["category"] in all_categories else "Other Products"
         products_by_cat[cat].append(product)
 
+
     # 🔑 Pass products_by_cat into template
     return render_template(
         "dashboard.html",
         products_by_cat=products_by_cat,all_categories=all_categories
     )
+@app.route("/admin/client-orders")
+def client_orders():
+    if not session.get("authenticated") or not session.get("is_admin"):
+        flash("Admin access required")
+        return redirect(url_for("login"))
+    if not session.get("is_admin") or not is_admin_in_db(session.get("user_email")):
+        flash("Admin access required")
+        return redirect(url_for("dashboard"))
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM orders ORDER BY created_at DESC")
+    orders = cursor.fetchall()
+    conn.close()
+    return render_template("admin.html", section="client-orders", orders=orders)
+
+
+@app.route("/admin/update-order/<int:order_id>", methods=["POST"])
+def update_order(order_id):
+    if not session.get("authenticated") or not session.get("is_admin"):
+        flash("Admin access required")
+        return redirect(url_for("login"))
+
+    new_status = request.form.get("status")
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+    cursor.execute("UPDATE orders SET status = ? WHERE id = ?", (new_status, order_id))
+    conn.commit()
+    conn.close()
+
+    flash("Order status updated!", "success")
+    return redirect(url_for("client_orders"))
+
+
+@app.route("/admin/delete-order/<int:order_id>", methods=["POST"])
+def delete_order(order_id):
+    if not session.get("authenticated") or not session.get("is_admin"):
+        flash("Admin access required")
+        return redirect(url_for("login"))
+
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM orders WHERE id = ?", (order_id,))
+    conn.commit()
+    conn.close()
+
+    flash("Order deleted successfully!", "success")
+    return redirect(url_for("client_orders"))
+
 @app.route("/reports")
 def reports():
-
     return render_template("reports.html")
 @app.route("/logout")
 def logout():
